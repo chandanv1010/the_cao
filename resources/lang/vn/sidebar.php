@@ -27,30 +27,30 @@ return [
         //         ],
         //     ]
         // ],
-        // [
-        //     'title' => 'QL Sản Phẩm',
-        //     'icon' => 'fa fa-cube',
-        //     'name' => ['product','attribute'],
-        //     'subModule' => [
-        //         [
-        //             'title' => 'QL Nhóm Sản Phẩm',
-        //             'route' => 'product/catalogue/index'
-        //         ],
-        //         [
-        //             'title' => 'QL Sản phẩm',
-        //             'route' => 'product/index'
-        //         ],
-        //         [
-        //             'title' => 'QL Loại thuộc tính',
-        //             'route' => 'attribute/catalogue/index'
-        //         ],
-        //         [
-        //             'title' => 'QL thuộc tính',
-        //             'route' => 'attribute/index'
-        //         ],
+        [
+            'title' => 'QL Sản Phẩm',
+            'icon' => 'fa fa-cube',
+            'name' => ['product','attribute'],
+            'subModule' => [
+                [
+                    'title' => 'QL Nhóm Sản Phẩm',
+                    'route' => 'product/catalogue/index'
+                ],
+                [
+                    'title' => 'QL Sản phẩm',
+                    'route' => 'product/index'
+                ],
+                // [
+                //     'title' => 'QL Loại thuộc tính',
+                //     'route' => 'attribute/catalogue/index'
+                // ],
+                // [
+                //     'title' => 'QL thuộc tính',
+                //     'route' => 'attribute/index'
+                // ],
 
-        //     ]
-        // ],
+            ]
+        ],
         // [
         //     'title' => 'QL đơn hàng',
         //     'icon' => 'fa fa-shopping-bag',
@@ -152,12 +152,12 @@ return [
                 ]
             ]
         ],
-        [
-            'title' => 'Giới thiệu',
-            'icon' => 'fa fa-user',
-            'name' => ['introduce'],
-            'route' => 'introduce/index'
-        ],
+        // [
+        //     'title' => 'Giới thiệu',
+        //     'icon' => 'fa fa-user',
+        //     'name' => ['introduce'],
+        //     'route' => 'introduce/index'
+        // ],
         // [
         //     'title' => 'QL Trường',
         //     'icon' => 'fa fa-instagram',
@@ -185,90 +185,90 @@ return [
         //         ],
         //     ]
         // ],
-        [
-            'title' => 'QL Trường',
-            'icon' => 'fa fa-github',
-            'name' => ['school', 'school_catalogue'],
-            'subModule' => [
-                [
-                    'title' => 'QL Loại Trường',
-                    'route' => 'school_catalogue/index'
-                ],
-                [
-                    'title' => 'QL Trường',
-                    'route' => 'school/index'
-                ],
-                [
-                    'title' => 'QL Khu Vực',
-                    'route' => 'school/area/index'
-                ],
-                [
-                    'title' => 'QL Thành Phố',
-                    'route' => 'school/city/index'
-                ],
-                [
-                    'title' => 'QL Dự Án',
-                    'route' => 'school/project/index'
-                ],
-            ]
-        ],
-        [
-            'title' => 'QL Chuyên Ngành',
-            'icon' => 'fa fa-database',
-            'name' => ['major', 'major_catalogue'],
-            'subModule' => [
-                [
-                    'title' => 'Nhóm Ngành',
-                    'route' => 'major_group/index'
-                ],
-                [
-                    'title' => 'Ngành',
-                    'route' => 'major_catalogue/index'
-                ],
-                [
-                    'title' => 'Chuyên Ngành',
-                    'route' => 'major/index'
-                ],
-            ]
-        ],
-        [
-            'title' => 'QL Học bổng',
-            'icon' => 'fa fa-github',
-            'name' => ['scholar'],
-            'subModule' => [
-                [
-                    'title' => 'QL Học Bổng',
-                    'route' => 'scholar/index'
-                ],
-                [
-                    'title' => 'QL Loại Học Bổng',
-                    'route' => 'scholar/catalogue/index'
-                ],
-                [
-                    'title' => 'QL Chính Sách',
-                    'route' => 'scholar/policy/index'
-                ],
-                [
-                    'title' => 'QL Hệ Đào Tạo',
-                    'route' => 'scholar/train/index'
-                ],
-            ]
-        ],
-        [
-            'title' => 'QL Tuyển Sinh',
-            'icon' => 'fa fa-instagram',
-            'name' => ['admission'],
-            'subModule' => [
-                [
-                    'title' => 'QL Tuyển Sinh',
-                    'route' => 'admission/index'
-                ],
-                [
-                    'title' => 'QL Loại Tuyển Sinh',
-                    'route' => 'admission/catalogue/index'
-                ],
-            ]
-        ],
+        // [
+        //     'title' => 'QL Trường',
+        //     'icon' => 'fa fa-github',
+        //     'name' => ['school', 'school_catalogue'],
+        //     'subModule' => [
+        //         [
+        //             'title' => 'QL Loại Trường',
+        //             'route' => 'school_catalogue/index'
+        //         ],
+        //         [
+        //             'title' => 'QL Trường',
+        //             'route' => 'school/index'
+        //         ],
+        //         [
+        //             'title' => 'QL Khu Vực',
+        //             'route' => 'school/area/index'
+        //         ],
+        //         [
+        //             'title' => 'QL Thành Phố',
+        //             'route' => 'school/city/index'
+        //         ],
+        //         [
+        //             'title' => 'QL Dự Án',
+        //             'route' => 'school/project/index'
+        //         ],
+        //     ]
+        // ],
+        // [
+        //     'title' => 'QL Chuyên Ngành',
+        //     'icon' => 'fa fa-database',
+        //     'name' => ['major', 'major_catalogue'],
+        //     'subModule' => [
+        //         [
+        //             'title' => 'Nhóm Ngành',
+        //             'route' => 'major_group/index'
+        //         ],
+        //         [
+        //             'title' => 'Ngành',
+        //             'route' => 'major_catalogue/index'
+        //         ],
+        //         [
+        //             'title' => 'Chuyên Ngành',
+        //             'route' => 'major/index'
+        //         ],
+        //     ]
+        // ],
+        // [
+        //     'title' => 'QL Học bổng',
+        //     'icon' => 'fa fa-github',
+        //     'name' => ['scholar'],
+        //     'subModule' => [
+        //         [
+        //             'title' => 'QL Học Bổng',
+        //             'route' => 'scholar/index'
+        //         ],
+        //         [
+        //             'title' => 'QL Loại Học Bổng',
+        //             'route' => 'scholar/catalogue/index'
+        //         ],
+        //         [
+        //             'title' => 'QL Chính Sách',
+        //             'route' => 'scholar/policy/index'
+        //         ],
+        //         [
+        //             'title' => 'QL Hệ Đào Tạo',
+        //             'route' => 'scholar/train/index'
+        //         ],
+        //     ]
+        // ],
+        // [
+        //     'title' => 'QL Tuyển Sinh',
+        //     'icon' => 'fa fa-instagram',
+        //     'name' => ['admission'],
+        //     'subModule' => [
+        //         [
+        //             'title' => 'QL Tuyển Sinh',
+        //             'route' => 'admission/index'
+        //         ],
+        //         [
+        //             'title' => 'QL Loại Tuyển Sinh',
+        //             'route' => 'admission/catalogue/index'
+        //         ],
+        //     ]
+        // ],
         [
             'title' => 'QL Banner & Slide',
             'icon' => 'fa fa-picture-o',
