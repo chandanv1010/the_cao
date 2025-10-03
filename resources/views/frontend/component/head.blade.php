@@ -29,3 +29,9 @@
 <meta name="twitter:image" content="{{ $seo['meta_image'] }}" />
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
+<!-- UIkit v2 CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.min.css" integrity="sha512-b/j0MsmsRINkL4YUIZWvtf9tQr4KYQt2ld3NjEdakM7QRRWLenfe9OmG5K9GjNW56hE0QJCwWMv11fAVFELR2w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Font Awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" referrerpolicy="no-referrer" />
+<!-- Frontend Custom CSS -->
+<link rel="stylesheet" href="{{ asset('css/home.css') }}" />
