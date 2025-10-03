@@ -1,54 +1,44 @@
 @php
-    $socialItem = ['facebook', 'google', 'tiktok', 'twitter']
+    $socialItem = ['facebook', 'google', 'tiktok', 'twitter'];
 @endphp
 <div id="header" class="pc-header uk-visible-large">
-    <div class="header-top">
+    <header class="header">
         <div class="uk-container uk-container-center">
-            <div class="uk-flex uk-flex-middle uk-flex-space-between">
-                <div class="header-contact uk-flex uk-flex-middle">
-                    <a class="header-contact__item email">{{ $system['contact_email'] }}</a>
-                    <a class="header-contact__item phone">{{ $system['contact_hotline'] }}</a>
+            <div class="header-wrapper uk-flex uk-flex-middle">
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="https://napfco.com/wp-content/uploads/2025/07/logo-napfco.png" alt="Logo">
+                    </a>
                 </div>
-                <div class="header-widget uk-flex uk-flex-middle">
-                    <div class="header-widget__menu uk-flex uk-flex-middle">
-                        <a class="widget_menu__item" href="#">FAQ</a>
-                        <a class="widget_menu__item" href="#">Hỗ Trợ</a>
-                        <a class="widget_menu__item" href="#">Liên Hệ</a>
-                    </div>
-                    <ul class="header-widget__social uk-flex uk-flex-middle uk-clearfix">
-                        @foreach($socialItem as $item)
-                        <li>
-                            <a href="{{ $system['social_'.$item] }}" class="{{ $item }} wow fadeInLeft"  title="{{ $item }}" target="_blank">
-                            <img src="/vendor/frontend/img/{{ $item }}.svg" alt="{{ $item }}">
-                            </a>
+                <nav>
+                    <ul class="uk-navbar-nav header-nav uk-margin-left">
+                        <li><a href="#">Trang Chủ</a></li>
+                        <li><a href="#">Thẻ Garena</a></li>
+                        <li><a href="#">Nạp Chiết Khấu</a></li>
+                        <li><a href="#">Tiện Ích</a></li>
+                        <li class="uk-parent" data-uk-dropdown>
+                            <a href="#">Hướng Dẫn <i class="fa fa-caret-down"></i></a>
+                            <div class="uk-dropdown uk-dropdown-navbar">
+                                <ul class="uk-nav uk-nav-navbar">
+                                    <li><a href="#">Hướng dẫn A</a></li>
+                                    <li><a href="#">Hướng dẫn B</a></li>
+                                </ul>
+                            </div>
                         </li>
-                        @endforeach
                     </ul>
+                </nav>
+                <div class="header-actions uk-flex">
+                    <a href="#" class="uk-button btn-login">Đăng Nhập</a>
+                    <a href="#" class="uk-button btn-balance uk-margin-left">
+                        Nạp số dư <i class="fa-solid fa-briefcase"></i> 
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="header-middle">
-        <div class="uk-container uk-container-center">
-            <div class="uk-flex uk-flex-middle uk-flex-space-between">
-                <div class="header-middle__widget uk-flex uk-flex-middle">
-                    <div class="logo">
-                        <a href="/" class="main-logo logo"><img src="{{ $system['homepage_logo'] }}" alt=""></a>
-                    </div>
-                    @include('frontend.component.navigation')
-                </div>
-                <div class="header-middle__search">
-                    <form action="tim-kiem" class="form-search">
-                        <input type="text" name="keyword" value="" placeholder="Nhập từ khóa muốn tìm kiếm ?">
-                        <button type="submit" class="btn-search">
-                            <img src="/vendor/frontend/img/search.svg" alt="">
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    </header>
+
 </div>
+
 
 @include('frontend.component.header-mobile')
 {{-- @include('frontend.auth.index') --}}
